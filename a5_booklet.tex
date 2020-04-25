@@ -1,0 +1,63 @@
+%%% PAGE LAYOUT
+\documentclass[a5paper, 10pt, twocolumn, twoside, english]{article}
+\usepackage{geometry}
+\geometry{a5paper, inner=2cm, outer=1cm, top=1.5cm, bottom=1.5cm, headheight=1cm, headsep=0.5cm}
+
+%%% FONT AND ADDITIONAL MATH SYMBOLS
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fourier}
+\usepackage{ebgaramond}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\renewcommand*{\sfdefault}{pag}
+\usepackage{extarrows}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{wasysym}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage[english]{cleveref}
+%\usepackage{multicol}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+
+\input{commands}
+%%% TITLE
+\title{\textsc{<++>}}
+\author{\textit{<++>}}
+\date{<++>}
+\addto\captionsenglish{\def\contentsname{\textsc{Contents}}}
+
+%%% HEAD- AND FOOTLINES
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\ihead{}
+\chead{}
+\ohead{}
+\ifoot{}
+\cfoot{\pagemark}
+\ofoot{}
+
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\fontsize{16}{19}\selectfont}{\thesection}{1em}{}
+\titleformat{\section}
+  {\normalfont\fontsize{14}{17}\selectfont}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\fontsize{14}{17}\selectfont}{\thesubsection}{1em}{}
+
+
+\begin{document}
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+\tableofcontents
+
+<++>
+
+\end{document}
