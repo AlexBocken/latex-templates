@@ -1,0 +1,46 @@
+%% PAGE LAYOUT
+\documentclass[a4paper, 12pt, twocolumn, english]{article}
+\input{packages}
+\input{commands}
+\geometry{margin=1in}
+%%% TITLE
+\title{<++>}
+\author{\textit{Alexander Bocken}}
+%\date{}
+\addto\captionsenglish{\def\contentsname{\textsc{Contents}}}
+
+%%% HEAD- AND FOOTLINES
+\usepackage{scrpage2}
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\ihead{\textsc{<++>}}
+\chead{}
+\ohead{}
+\ifoot{}
+\cfoot{\pagemark}
+\ofoot{}
+
+\begin{document}
+\twocolumn[
+  \begin{@twocolumnfalse}
+    \maketitle
+   \section*{\textsc{Abstract}}
+        <++>\\
+  \end{@twocolumnfalse}
+]
+
+\tableofcontents
+
+\section{\textsc{<++>}}
+<++>
+
+\onecolumn
+\renewcommand{\thesection}{A}
+\section{Appendix}
+\appendix
+%The code used for calculating these results:
+%\begin{minted}[breaklines, linenos, xleftmargin=12pt]{python}
+%	<++>
+%\end{minted}
+%\includepdf[pages=-]{<++>}
+\end{document}
